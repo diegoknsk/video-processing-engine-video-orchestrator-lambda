@@ -35,6 +35,6 @@ Fazer o handler retornar uma resposta MOCK básica (ex.: status=ok, requestId, c
 - [ ] Objetivo atingido: comprovar que o Lambda sobe e executa após o pipeline
 
 ## Rastreamento (dev tracking)
-- **Início:** —
+- **Início:** 14/02/2026, às 20:17 (Brasília)
 - **Fim:** —
 - **Tempo total de desenvolvimento:** —

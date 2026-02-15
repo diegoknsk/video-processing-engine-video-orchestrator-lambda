@@ -38,6 +38,6 @@ Criar o projeto .NET 10 do Lambda Video Orchestrator com handler puro, entry poi
 - [ ] Nenhuma integração real com SQS, DynamoDB ou Step Functions ainda
 
 ## Rastreamento (dev tracking)
-- **Início:** —
+- **Início:** 14/02/2026, às 20:04 (Brasília)
 - **Fim:** —
 - **Tempo total de desenvolvimento:** —
