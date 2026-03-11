@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VideoProcessing.VideoOrchestrator.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:VideoProcessing.VideoOrchestrator.Domain.Entities.OrchestratorJob">
+            <summary>
+            Entidade mínima de job de orquestração.
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Domain.Enums.JobStatus">
+            <summary>
+            Status do job de orquestração.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VideoProcessing.VideoOrchestrator.Lambda</name>
+    </assembly>
+    <members>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.Function">
+            <summary>
+            Entry point da Lambda: recebe Stream (JSON), adapta para eventos e delega ao handler.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Function.#ctor">
+            <summary>
+            Construtor público para o runtime Lambda.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Function.#ctor(System.IServiceProvider)">
+            <summary>
+            Construtor interno para testes (injeção de dependência).
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Function.Handler(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)">
+            <summary>
+            Handler invocado pelo runtime: lê Stream, normaliza eventos, processa e retorna última resposta de sucesso ou erro.
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.IOrchestratorEventAdapter">
+            <summary>
+            Adaptador que normaliza o evento bruto (envelope SQS ou JSON direto) em lista de <see cref="T:VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaEvent"/>.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.IOrchestratorEventAdapter.FromRawEvent(System.Text.Json.JsonDocument)">
+            <summary>
+            Converte o evento bruto (JsonDocument) em lista de eventos normalizados.
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.IOrchestratorHandler">
+            <summary>
+            Handler que processa um evento normalizado e retorna a resposta da Lambda.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.IOrchestratorHandler.HandleAsync(VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaEvent,System.Threading.CancellationToken)">
+            <summary>
+            Processa um evento e retorna a resposta (mock echo).
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaEvent">
+            <summary>
+            Evento de entrada da Lambda (payload normalizado a partir de SQS ou JSON direto).
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaResponse">
+            <summary>
+            Resposta da Lambda (echo mock com statusCode, jobId, correlationId, etc.).
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaResponse.Ok(VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel)">
+            <summary>
+            Resposta de sucesso (200) a partir do response do use case.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaResponse.ValidationError(System.String)">
+            <summary>
+            Resposta de erro de validação (400).
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaResponse.NotFound(System.String)">
+            <summary>
+            Resposta não encontrado (404).
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.OrchestratorEventAdapter">
+            <summary>
+            Implementação do adaptador: detecta envelope SQS (Records[].body) ou JSON direto.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.OrchestratorEventAdapter.#ctor(Microsoft.Extensions.Logging.ILogger{VideoProcessing.VideoOrchestrator.Lambda.OrchestratorEventAdapter})">
+            <summary>
+            Implementação do adaptador: detecta envelope SQS (Records[].body) ou JSON direto.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.OrchestratorEventAdapter.FromRawEvent(System.Text.Json.JsonDocument)">
+            <inheritdoc />
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.OrchestratorHandler">
+            <summary>
+            Handler que mapeia evento → input, chama use case e retorna OrchestratorLambdaResponse.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.OrchestratorHandler.#ctor(VideoProcessing.VideoOrchestrator.Application.Ports.IOrchestratorJobUseCase,Microsoft.Extensions.Logging.ILogger{VideoProcessing.VideoOrchestrator.Lambda.OrchestratorHandler})">
+            <summary>
+            Handler que mapeia evento → input, chama use case e retorna OrchestratorLambdaResponse.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.OrchestratorHandler.HandleAsync(VideoProcessing.VideoOrchestrator.Lambda.Models.OrchestratorLambdaEvent,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Lambda.Startup">
+            <summary>
+            Bootstrap da injeção de dependência (sem AddAWSLambdaHosting).
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Lambda.Startup.BuildServiceProvider">
+            <summary>
+            Constrói o service provider com todos os serviços registrados.
+            </summary>
+        </member>
+    </members>
+</doc>

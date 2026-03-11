@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VideoProcessing.VideoOrchestrator.Infra.CrossCutting</name>
+    </assembly>
+    <members>
+        <member name="T:VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Configuration.LambdaOptions">
+            <summary>
+            Opções de configuração da Lambda.
+            </summary>
+            <param name="AwsRegion">Região AWS (default us-east-1).</param>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Configuration.LambdaOptions.#ctor(System.String)">
+            <summary>
+            Opções de configuração da Lambda.
+            </summary>
+            <param name="AwsRegion">Região AWS (default us-east-1).</param>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Configuration.LambdaOptions.AwsRegion">
+            <summary>Região AWS (default us-east-1).</summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Infra.CrossCutting.DependencyInjection.CrossCuttingServiceExtensions">
+            <summary>
+            Extensões de registro dos serviços de infraestrutura cross-cutting.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Infra.CrossCutting.DependencyInjection.CrossCuttingServiceExtensions.AddCrossCuttingServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Adiciona serviços cross-cutting (configuração LambdaOptions).
+            </summary>
+        </member>
+    </members>
+</doc>

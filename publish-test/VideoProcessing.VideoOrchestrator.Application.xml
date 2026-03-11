@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VideoProcessing.VideoOrchestrator.Application</name>
+    </assembly>
+    <members>
+        <member name="T:VideoProcessing.VideoOrchestrator.Application.DependencyInjection.ApplicationServiceExtensions">
+            <summary>
+            Extensões de registro dos serviços da camada Application.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Application.DependencyInjection.ApplicationServiceExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adiciona os serviços da aplicação (use case mockado).
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel">
+            <summary>
+            Modelo de entrada para processamento de job do orquestrador.
+            </summary>
+            <param name="JobId">Identificador do job.</param>
+            <param name="CorrelationId">Identificador de correlação para rastreamento.</param>
+            <param name="Payload">Dados brutos da mensagem SQS (opcional).</param>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel.#ctor(System.Guid,System.String,System.String)">
+            <summary>
+            Modelo de entrada para processamento de job do orquestrador.
+            </summary>
+            <param name="JobId">Identificador do job.</param>
+            <param name="CorrelationId">Identificador de correlação para rastreamento.</param>
+            <param name="Payload">Dados brutos da mensagem SQS (opcional).</param>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel.JobId">
+            <summary>Identificador do job.</summary>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel.CorrelationId">
+            <summary>Identificador de correlação para rastreamento.</summary>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel.Payload">
+            <summary>Dados brutos da mensagem SQS (opcional).</summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel">
+            <summary>
+            Modelo de resposta do processamento de job do orquestrador.
+            </summary>
+            <param name="JobId">Identificador do job.</param>
+            <param name="CorrelationId">Identificador de correlação.</param>
+            <param name="Status">Status do processamento.</param>
+            <param name="Message">Mensagem descritiva.</param>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel.#ctor(System.Guid,System.String,System.String,System.String)">
+            <summary>
+            Modelo de resposta do processamento de job do orquestrador.
+            </summary>
+            <param name="JobId">Identificador do job.</param>
+            <param name="CorrelationId">Identificador de correlação.</param>
+            <param name="Status">Status do processamento.</param>
+            <param name="Message">Mensagem descritiva.</param>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel.JobId">
+            <summary>Identificador do job.</summary>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel.CorrelationId">
+            <summary>Identificador de correlação.</summary>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel.Status">
+            <summary>Status do processamento.</summary>
+        </member>
+        <member name="P:VideoProcessing.VideoOrchestrator.Application.Models.ResponseModels.OrchestratorJobResponseModel.Message">
+            <summary>Mensagem descritiva.</summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Application.Ports.IOrchestratorJobUseCase">
+            <summary>
+            Port (interface) do use case de processamento de job do orquestrador.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Application.Ports.IOrchestratorJobUseCase.ExecuteAsync(VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel,System.Threading.CancellationToken)">
+            <summary>
+            Executa o processamento do job.
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Application.UseCases.ProcessJob.OrchestratorJobUseCase">
+            <summary>
+            Use case mockado: retorna resposta de echo sem regra de negócio real.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Application.UseCases.ProcessJob.OrchestratorJobUseCase.#ctor(Microsoft.Extensions.Logging.ILogger{VideoProcessing.VideoOrchestrator.Application.UseCases.ProcessJob.OrchestratorJobUseCase})">
+            <summary>
+            Use case mockado: retorna resposta de echo sem regra de negócio real.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Application.UseCases.ProcessJob.OrchestratorJobUseCase.ExecuteAsync(VideoProcessing.VideoOrchestrator.Application.Models.InputModels.OrchestratorJobInputModel,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

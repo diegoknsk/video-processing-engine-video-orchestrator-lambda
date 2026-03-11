@@ -1,0 +1,39 @@
+Exemplos de JSON para testar o Lambda Orchestrator (Lambda Test Tool ou invocação direta).
+O handler aceita: (1) envelope SQS com Records[].body em string JSON, ou (2) JSON direto.
+
+================================================================================
+1) ENVELOPE SQS (como a fila entrega para a Lambda)
+   O campo "body" de cada record deve ser uma string JSON com: jobId, correlationId, payload.
+================================================================================
+
+{
+  "Records": [
+    {
+      "messageId": "test-message-id-001",
+      "receiptHandle": "test-receipt-handle",
+      "body": "{\"jobId\":\"550e8400-e29b-41d4-a716-446655440000\",\"correlationId\":\"corr-test-001\",\"payload\":\"video-123.mp4\"}",
+      "attributes": {},
+      "messageAttributes": {},
+      "md5OfBody": "",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:123456789012:video-orchestrator-queue",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}
+
+================================================================================
+2) JSON DIRETO (sem envelope SQS)
+   Use para teste rápido; o root do JSON é o próprio evento.
+================================================================================
+
+{
+  "jobId": "550e8400-e29b-41d4-a716-446655440000",
+  "correlationId": "corr-test-002",
+  "payload": "video-456.mp4"
+}
+
+================================================================================
+Resposta esperada (mock): statusCode 200, echo de jobId/correlationId e message
+"Mock: job recebido e processado (stub)".
+================================================================================
