@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VideoProcessing.VideoOrchestrator.Infra.Data</name>
+    </assembly>
+    <members>
+        <member name="T:VideoProcessing.VideoOrchestrator.Infra.Data.DependencyInjection.DataServiceExtensions">
+            <summary>
+            Extensões de registro dos serviços de dados.
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Infra.Data.DependencyInjection.DataServiceExtensions.AddDataServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adiciona serviços de dados. Nesta fase não registra implementações reais (stub).
+            </summary>
+        </member>
+        <member name="T:VideoProcessing.VideoOrchestrator.Infra.Data.Repositories.OrchestratorJobRepository">
+            <summary>
+            Stub do repositório de jobs do orquestrador. Sem implementação real (sem DynamoDB nesta fase).
+            </summary>
+        </member>
+        <member name="M:VideoProcessing.VideoOrchestrator.Infra.Data.Repositories.OrchestratorJobRepository.SaveAsync(System.Threading.CancellationToken)">
+            <summary>
+            Stub — não implementado.
+            </summary>
+        </member>
+    </members>
+</doc>

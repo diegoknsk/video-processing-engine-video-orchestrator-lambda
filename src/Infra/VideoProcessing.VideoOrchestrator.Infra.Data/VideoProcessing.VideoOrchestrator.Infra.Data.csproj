@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\VideoProcessing.VideoOrchestrator.Application\VideoProcessing.VideoOrchestrator.Application.csproj" />
+    <ProjectReference Include="..\..\Core\VideoProcessing.VideoOrchestrator.Domain\VideoProcessing.VideoOrchestrator.Domain.csproj" />
+    <ProjectReference Include="..\VideoProcessing.VideoOrchestrator.Infra.CrossCutting\VideoProcessing.VideoOrchestrator.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+</Project>

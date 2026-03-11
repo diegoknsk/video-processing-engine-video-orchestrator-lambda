@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Core/VideoProcessing.VideoOrchestrator.Application/VideoProcessing.VideoOrchestrator.Application.csproj" />
+    <Project Path="Core/VideoProcessing.VideoOrchestrator.Domain/VideoProcessing.VideoOrchestrator.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infra/">
+    <Project Path="Infra/VideoProcessing.VideoOrchestrator.Infra.CrossCutting/VideoProcessing.VideoOrchestrator.Infra.CrossCutting.csproj" />
+    <Project Path="Infra/VideoProcessing.VideoOrchestrator.Infra.Data/VideoProcessing.VideoOrchestrator.Infra.Data.csproj" />
+  </Folder>
+  <Folder Name="/InterfacesExternas/">
+    <Project Path="InterfacesExternas/VideoProcessing.VideoOrchestrator.Lambda/VideoProcessing.VideoOrchestrator.Lambda.csproj" />
+  </Folder>
+  <Project Path="tests/VideoProcessing.VideoOrchestrator.UnitTests/VideoProcessing.VideoOrchestrator.UnitTests.csproj" />
+</Solution>
