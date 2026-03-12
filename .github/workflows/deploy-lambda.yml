@@ -63,11 +63,12 @@ jobs:
           aws lambda wait function-updated \
             --function-name ${{ secrets.AWS_LAMBDA_FUNCTION_NAME }}
 
-      - name: Set Lambda handler
+      - name: Set Lambda handler and environment variables
         run: |
           aws lambda update-function-configuration \
             --function-name ${{ secrets.AWS_LAMBDA_FUNCTION_NAME }} \
-            --handler "VideoProcessing.VideoOrchestrator.Lambda::VideoProcessing.VideoOrchestrator.Lambda.Function::FunctionHandler"
+            --handler "VideoProcessing.VideoOrchestrator.Lambda::VideoProcessing.VideoOrchestrator.Lambda.Function::FunctionHandler" \
+            --environment "Variables={VIDEO_MANAGEMENT_API__BASE_URL=${{ secrets.VIDEO_MANAGEMENT_API_BASE_URL }},VIDEO_MANAGEMENT_API__TIMEOUT_SECONDS=${{ secrets.VIDEO_MANAGEMENT_API_TIMEOUT_SECONDS }},M2M_AUTH__TOKEN_ENDPOINT=${{ secrets.M2M_TOKEN_ENDPOINT }},M2M_AUTH__CLIENT_ID=${{ secrets.M2M_CLIENT_ID }},M2M_AUTH__CLIENT_SECRET=${{ secrets.M2M_CLIENT_SECRET }},STEP_FUNCTION__STATE_MACHINE_ARN=${{ secrets.STEP_FUNCTION_ARN }}}"
 
       - name: Wait for configuration update
         run: |

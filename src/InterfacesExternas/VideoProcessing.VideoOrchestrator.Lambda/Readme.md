@@ -1,3 +1,9 @@
+# Video Orchestrator Lambda
+
+Variáveis de ambiente necessárias para execução: ver [docs/environment-variables.md](../../../docs/environment-variables.md) na raiz do repositório.
+
+---
+
 # AWS Lambda Empty Function Project
 
 This starter project consists of:

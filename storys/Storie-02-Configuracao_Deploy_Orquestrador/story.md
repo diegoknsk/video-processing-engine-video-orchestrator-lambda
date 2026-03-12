@@ -56,6 +56,6 @@ Entregar a infraestrutura de configuração e bootstrap do orquestrador: leitura
 - [ ] `dotnet build` e `dotnet test` passam sem erros no pipeline após as alterações.
 
 ## Rastreamento (dev tracking)
-- **Início:** —
+- **Início:** 12/03/2026, às 18:09 (Brasília)
 - **Fim:** —
 - **Tempo total de desenvolvimento:** —
