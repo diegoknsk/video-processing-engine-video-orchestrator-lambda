@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using VideoProcessing.VideoOrchestrator.Application.UseCases;
 using VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings;
 
 namespace VideoProcessing.VideoOrchestrator.Infra.CrossCutting;
@@ -15,6 +16,9 @@ public static class DependencyInjection
     /// </summary>
     public static IServiceCollection AddOrchestratorConfiguration(this IServiceCollection services, IConfiguration config)
     {
+        services.AddScoped<IFetchVideoDetailsUseCase, FetchVideoDetailsUseCase>();
+        services.AddScoped<IOrchestrateVideoProcessingUseCase, OrchestrateVideoProcessingUseCase>();
+
         services.AddOptions<VideoManagementApiOptions>()
             .Bind(config.GetSection(VideoManagementApiOptions.SectionName))
             .ValidateDataAnnotations()

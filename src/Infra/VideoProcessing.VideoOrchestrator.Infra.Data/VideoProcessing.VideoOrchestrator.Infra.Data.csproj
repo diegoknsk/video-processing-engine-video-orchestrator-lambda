@@ -1,6 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.301" />
+    <PackageReference Include="AWSSDK.StepFunctions" Version="3.7.302" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.0.0" />
+    <PackageReference Include="Refit" Version="8.0.0" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Core\VideoProcessing.VideoOrchestrator.Application\VideoProcessing.VideoOrchestrator.Application.csproj" />
     <ProjectReference Include="..\..\Core\VideoProcessing.VideoOrchestrator.Domain\VideoProcessing.VideoOrchestrator.Domain.csproj" />
     <ProjectReference Include="..\VideoProcessing.VideoOrchestrator.Infra.CrossCutting\VideoProcessing.VideoOrchestrator.Infra.CrossCutting.csproj" />
@@ -13,5 +21,8 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="VideoProcessing.VideoOrchestrator.UnitTests" />
+  </ItemGroup>
 
 </Project>

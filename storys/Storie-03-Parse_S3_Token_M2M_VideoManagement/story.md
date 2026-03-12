@@ -67,6 +67,6 @@ Entregar, ao final desta story, a capacidade do orquestrador de:
 - [ ] Testes unitários cobrem os cenários: parse de key válida, parse de key inválida, obtenção de token com sucesso, falha de token (401), busca de vídeo com sucesso, busca de vídeo 404; cobertura ≥ 80% nos componentes criados.
 
 ## Rastreamento (dev tracking)
-- **Início:** —
+- **Início:** 12/03/2026, às 18:39 (Brasília)
 - **Fim:** —
 - **Tempo total de desenvolvimento:** —

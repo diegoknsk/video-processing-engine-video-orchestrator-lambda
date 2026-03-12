@@ -65,6 +65,6 @@ Entregar, ao final desta story, o orquestrador totalmente funcional: recebe o ev
 - [ ] `dotnet build` e `dotnet test` passam no pipeline após as alterações.
 
 ## Rastreamento (dev tracking)
-- **Início:** —
+- **Início:** 12/03/2026, às 19:20 (Brasília)
 - **Fim:** —
 - **Tempo total de desenvolvimento:** —
