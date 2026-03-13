@@ -63,11 +63,19 @@ jobs:
           aws lambda wait function-updated \
             --function-name ${{ secrets.AWS_LAMBDA_FUNCTION_NAME }}
 
-      - name: Set Lambda handler
+      - name: Set Lambda handler and environment variables
+        env:
+          VM_BASE_URL: ${{ vars.VIDEO_MANAGEMENT_API__BASE_URL }}
+          VM_TIMEOUT: ${{ vars.VIDEO_MANAGEMENT_API__TIMEOUT_SECONDS }}
+          M2M_ENDPOINT: ${{ secrets.M2M_AUTH__TOKEN_ENDPOINT }}
+          M2M_CLIENT_ID: ${{ secrets.M2M_AUTH__CLIENT_ID }}
+          M2M_CLIENT_SECRET: ${{ secrets.M2M_AUTH__CLIENT_SECRET }}
+          SF_ARN: ${{ secrets.STEP_FUNCTION__STATE_MACHINE_ARN }}
         run: |
           aws lambda update-function-configuration \
             --function-name ${{ secrets.AWS_LAMBDA_FUNCTION_NAME }} \
-            --handler "VideoProcessing.VideoOrchestrator.Lambda::VideoProcessing.VideoOrchestrator.Lambda.Function::FunctionHandler"
+            --handler "VideoProcessing.VideoOrchestrator.Lambda::VideoProcessing.VideoOrchestrator.Lambda.Function::FunctionHandler" \
+            --environment "Variables={VIDEO_MANAGEMENT_API__BASE_URL=${VM_BASE_URL},VIDEO_MANAGEMENT_API__TIMEOUT_SECONDS=${VM_TIMEOUT},M2M_AUTH__TOKEN_ENDPOINT=${M2M_ENDPOINT},M2M_AUTH__CLIENT_ID=${M2M_CLIENT_ID},M2M_AUTH__CLIENT_SECRET=${M2M_CLIENT_SECRET},STEP_FUNCTION__STATE_MACHINE_ARN=${SF_ARN}}"
 
       - name: Wait for configuration update
         run: |
