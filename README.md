@@ -1,5 +1,8 @@
 # Video Orchestrator Lambda
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=diegoknsk_video-processing-engine-video-orchestrator-lambda&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=diegoknsk_video-processing-engine-video-orchestrator-lambda)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=diegoknsk_video-processing-engine-video-orchestrator-lambda&metric=coverage)](https://sonarcloud.io/summary/new_code?id=diegoknsk_video-processing-engine-video-orchestrator-lambda)
+
 Lambda .NET 10 do Video Processing Engine — orquestrador de processamento de vídeo com trigger SQS.
 
 ## Estrutura de Pastas
