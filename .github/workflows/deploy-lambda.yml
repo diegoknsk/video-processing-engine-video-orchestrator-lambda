@@ -76,7 +76,7 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     needs: [sonar-analysis]
-    if: always() && (needs.sonar-analysis.result == 'success' || needs.sonar-analysis.result == 'skipped') && github.event_name != 'pull_request'
+    if: always() && (needs.sonar-analysis.result == 'success' || needs.sonar-analysis.result == 'skipped') && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
