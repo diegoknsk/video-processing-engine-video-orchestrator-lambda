@@ -1,5 +1,8 @@
 # Video Orchestrator Lambda
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=diegoknsk_video-processing-engine-video-orchestrator-lambda&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=diegoknsk_video-processing-engine-video-orchestrator-lambda)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=diegoknsk_video-processing-engine-video-orchestrator-lambda&metric=coverage)](https://sonarcloud.io/summary/new_code?id=diegoknsk_video-processing-engine-video-orchestrator-lambda)
+
 Lambda .NET 10 do Video Processing Engine — orquestrador de processamento de vídeo com trigger SQS.
 
 ## Estrutura de Pastas
@@ -66,6 +69,18 @@ O workflow `.github/workflows/deploy-lambda.yml` executa em push para `main` ou 
 | `AWS_SESSION_TOKEN` | Não | Para credenciais temporárias (ex.: AssumeRole) |
 | `AWS_REGION` | Sim | Região da função Lambda (ex.: `us-east-1`) |
 | `AWS_LAMBDA_FUNCTION_NAME` | Sim | Nome da função Lambda a ser atualizada |
+| `SONAR_TOKEN` | Sim (para SonarCloud) | Token de autenticação do SonarCloud para o job de análise estática |
+
+### Parâmetros SonarCloud (no workflow)
+
+O job **SonarCloud Analysis** usa os seguintes valores (já definidos no workflow; não é necessário configurar variables no GitHub):
+
+| Parâmetro | Valor no workflow | Descrição |
+|-----------|-------------------|-----------|
+| Project Key | `diegoknsk_video-processing-engine-video-orchestrator-lambda` | Identificador do projeto no SonarCloud |
+| Organization | `diegoknsk` | Slug da organização no SonarCloud |
+
+**Como obter o `SONAR_TOKEN`:** em [sonarcloud.io/account/security](https://sonarcloud.io/account/security), gere um token (ex.: `github-actions-video-orchestrator`) e cadastre o valor em **Settings → Secrets and variables → Actions → Secrets** com o nome `SONAR_TOKEN`. O token não é exibido novamente após a criação.
 
 ---
 
