@@ -5,13 +5,13 @@
       "executablePath": "C:\\Users\\diego\\.dotnet\\tools\\dotnet-lambda-test-tool-10.0.exe",
       "workingDirectory": "$(ProjectDir)",
       "environmentVariables": {
-        "AWS_REGION": "us-east-1",
-        "VIDEO_MANAGEMENT_API__BASE_URL": "https://yj9b5wl619.execute-api.us-east-1.amazonaws.com/dev/videos/",
+        "AWS_REGION": "{{awsRegion}}",
+        "VIDEO_MANAGEMENT_API__BASE_URL": "{{videoManagementApiBaseUrl}}",
         "VIDEO_MANAGEMENT_API__TIMEOUT_SECONDS": "30",
-        "M2M_AUTH__TOKEN_ENDPOINT": "https://video-processing-engine-dev-auth.auth.us-east-1.amazoncognito.com/oauth2/token",
-        "M2M_AUTH__CLIENT_ID": "cjed8d3r66c828nrhq09cgmkl",
-        "M2M_AUTH__CLIENT_SECRET": "lvhj7volhjiiea6e7opuivduuagsb433kd1q1oarhv6d3dp5db6",
-        "STEP_FUNCTION__STATE_MACHINE_ARN": "arn:aws:states:us-east-1:380894490298:stateMachine:video-processing-engine-dev-video-processing"
+        "M2M_AUTH__TOKEN_ENDPOINT": "{{m2mTokenEndpoint}}",
+        "M2M_AUTH__CLIENT_ID": "{{clientID}}",
+        "M2M_AUTH__CLIENT_SECRET": "{{secret}}",
+        "STEP_FUNCTION__STATE_MACHINE_ARN": "{{stepFunctionArn}}"
       }
     }
   }

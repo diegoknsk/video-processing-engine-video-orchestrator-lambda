@@ -26,5 +26,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+    <InternalsVisibleTo Include="VideoProcessing.VideoOrchestrator.UnitTests" />
   </ItemGroup>
 </Project>
