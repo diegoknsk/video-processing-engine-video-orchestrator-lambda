@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using VideoProcessing.VideoOrchestrator.Application.Options;
 using VideoProcessing.VideoOrchestrator.Application.UseCases;
 using VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings;
 
@@ -33,6 +34,8 @@ public static class DependencyInjection
             .Bind(config.GetSection(StepFunctionOptions.SectionName))
             .ValidateDataAnnotations()
             .ValidateOnStart();
+
+        services.Configure<OutputOptions>(config.GetSection(OutputOptions.SectionName));
 
         return services;
     }

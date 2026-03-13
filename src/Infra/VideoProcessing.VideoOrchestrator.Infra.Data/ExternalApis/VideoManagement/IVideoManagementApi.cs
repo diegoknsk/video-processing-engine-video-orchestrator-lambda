@@ -8,7 +8,7 @@ namespace VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagem
 public interface IVideoManagementApi
 {
     [Get("/internal/videos/{userId}/{videoId}")]
-    Task<VideoManagementVideoResponse> GetVideoAsync(
+    Task<VideoManagementApiResponse> GetVideoAsync(
         string userId,
         string videoId,
         [Header("Authorization")] string authorization,

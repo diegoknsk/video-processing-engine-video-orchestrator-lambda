@@ -11,5 +11,8 @@ public sealed record VideoDetails(
     string S3Key,
     string S3Bucket,
     string UserName,
-    string UserEmail
+    string UserEmail,
+    int DurationSec,
+    int FrameIntervalSec,
+    int ParallelChunks
 );

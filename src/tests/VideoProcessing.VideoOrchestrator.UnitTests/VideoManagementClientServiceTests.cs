@@ -23,14 +23,19 @@ public sealed class VideoManagementClientServiceTests
                 "video-2",
                 It.IsAny<string>(),
                 It.IsAny<CancellationToken>()))
-            .ReturnsAsync(new VideoManagementVideoResponse
+            .ReturnsAsync(new VideoManagementApiResponse
             {
-                Id = "video-2",
-                UserId = "user-1",
-                Title = "My Video",
-                Status = "Uploaded",
-                S3Key = "videos/user-1/video-2/original",
-                User = new VideoManagementUserInfo { Name = "John", Email = "john@example.com" }
+                Success = true,
+                Data = new VideoManagementVideoData
+                {
+                    VideoId = "video-2",
+                    UserId = "user-1",
+                    UserEmail = "john@example.com",
+                    OriginalFileName = "My Video",
+                    StatusDescription = "Uploaded",
+                    S3KeyVideo = "videos/user-1/video-2/original",
+                    S3BucketVideo = "my-bucket"
+                }
             });
 
         var result = await sut.GetVideoDetailsAsync("user-1", "video-2", "token-123");
@@ -41,9 +46,12 @@ public sealed class VideoManagementClientServiceTests
             "My Video",
             "Uploaded",
             "videos/user-1/video-2/original",
+            "my-bucket",
             "",
-            "John",
-            "john@example.com"));
+            "john@example.com",
+            0,
+            0,
+            1));
     }
 
     [Fact]
@@ -72,10 +80,75 @@ public sealed class VideoManagementClientServiceTests
         _apiMock
             .Setup(x => x.GetVideoAsync("u", "v", It.IsAny<string>(), It.IsAny<CancellationToken>()))
             .Callback<string, string, string, CancellationToken>((_, _, auth, _) => capturedAuth = auth)
-            .ReturnsAsync(new VideoManagementVideoResponse { Id = "v", UserId = "u", Title = "", Status = "", S3Key = "" });
+            .ReturnsAsync(new VideoManagementApiResponse
+            {
+                Data = new VideoManagementVideoData { VideoId = "v", UserId = "u", S3KeyVideo = "", S3BucketVideo = "" }
+            });
 
         await sut.GetVideoDetailsAsync("u", "v", "my-token");
 
         capturedAuth.Should().Be("Bearer my-token");
+    }
+
+    [Fact]
+    public async Task GetVideoDetailsAsync_WhenApiReturnsParallelChunksZero_MapsToParallelChunksOne()
+    {
+        var sut = new VideoManagementClientService(_apiMock.Object);
+        _apiMock
+            .Setup(x => x.GetVideoAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
+            .ReturnsAsync(new VideoManagementApiResponse
+            {
+                Success = true,
+                Data = new VideoManagementVideoData
+                {
+                    VideoId = "vid",
+                    UserId = "usr",
+                    UserEmail = "e@x.com",
+                    OriginalFileName = "F",
+                    StatusDescription = "Uploaded",
+                    S3KeyVideo = "k",
+                    S3BucketVideo = "b",
+                    DurationSec = 30,
+                    FrameIntervalSec = 5,
+                    ParallelChunks = 0
+                }
+            });
+
+        var result = await sut.GetVideoDetailsAsync("usr", "vid", "token");
+
+        result.ParallelChunks.Should().Be(1);
+        result.DurationSec.Should().Be(30);
+        result.FrameIntervalSec.Should().Be(5);
+    }
+
+    [Fact]
+    public async Task GetVideoDetailsAsync_WhenApiReturnsDurationAndChunks_MapsOneToOne()
+    {
+        var sut = new VideoManagementClientService(_apiMock.Object);
+        _apiMock
+            .Setup(x => x.GetVideoAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
+            .ReturnsAsync(new VideoManagementApiResponse
+            {
+                Success = true,
+                Data = new VideoManagementVideoData
+                {
+                    VideoId = "v",
+                    UserId = "u",
+                    UserEmail = "e@x.com",
+                    OriginalFileName = "F",
+                    StatusDescription = "Uploaded",
+                    S3KeyVideo = "k",
+                    S3BucketVideo = "b",
+                    DurationSec = 45,
+                    FrameIntervalSec = 5,
+                    ParallelChunks = 3
+                }
+            });
+
+        var result = await sut.GetVideoDetailsAsync("u", "v", "token");
+
+        result.DurationSec.Should().Be(45);
+        result.FrameIntervalSec.Should().Be(5);
+        result.ParallelChunks.Should().Be(3);
     }
 }

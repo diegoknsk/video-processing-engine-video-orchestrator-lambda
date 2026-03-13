@@ -16,9 +16,14 @@ public sealed class StepFunctionServiceTests
 {
     private static StepFunctionPayload CreatePayload() =>
         new(
+            "1.0",
             "exec-1",
-            new VideoProcessingInput("v1", "u1", "Title", "bucket", "key", "prefix/", [new VideoChunk(0, "path/")]),
+            new VideoProcessingInput(
+                "v1", "u1", "Title", "bucket", "key", "prefix/",
+                [new VideoChunk(0, "v1-chunk-0", 0, -1, 1, "manifests/chunk-0/", "frames/chunk-0/")]),
+            new OutputInfo("frames-bucket", "manifest-bucket"),
             new ZipOutputInfo("bucket", "videos/u1/v1/output.zip"),
+            new FinalizeInfo("frames-bucket", "prefix/", "bucket", "v1", "u1/v1", true),
             new UserInfo("User", "user@x.com")
         );
 

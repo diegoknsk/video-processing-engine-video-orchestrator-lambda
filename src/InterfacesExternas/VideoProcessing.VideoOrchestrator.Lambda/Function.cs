@@ -51,6 +51,12 @@ namespace VideoProcessing.VideoOrchestrator.Lambda
             {
                 context.Logger.LogInformation("Processing record {MessageId}", record.MessageId);
 
+                if (string.IsNullOrEmpty(record.Body))
+                {
+                    context.Logger.LogError("Record {MessageId} tem Body nulo ou vazio. No Lambda Test Tool use envelope SQS com body = string JSON do evento S3 (veja docs/sampleSqsOrquestrador.txt)", record.MessageId);
+                    throw new InvalidOperationException("SQS record Body is required. Use an SQS envelope with body containing the S3 event JSON string (see docs/sampleSqsOrquestrador.txt).");
+                }
+
                 S3ObjectCreatedEvent? s3Event;
                 try
                 {

@@ -1,9 +1,9 @@
 Exemplos de JSON para testar o Lambda Orchestrator (Lambda Test Tool ou invocação direta).
-O handler aceita: (1) envelope SQS com Records[].body em string JSON, ou (2) JSON direto.
+O handler espera um ENVELOPE SQS: cada record deve ter "body" como STRING contendo o JSON do evento S3.
 
 ================================================================================
-1) ENVELOPE SQS (como a fila entrega para a Lambda)
-   O campo "body" de cada record deve ser uma string JSON com: jobId, correlationId, payload.
+ENVELOPE SQS (como a fila entrega para a Lambda)
+  - "body" = string com o evento S3 completo (escape das aspas no JSON).
 ================================================================================
 
 {
@@ -11,29 +11,14 @@ O handler aceita: (1) envelope SQS com Records[].body em string JSON, ou (2) JSO
     {
       "messageId": "test-message-id-001",
       "receiptHandle": "test-receipt-handle",
-      "body": "{\"jobId\":\"550e8400-e29b-41d4-a716-446655440000\",\"correlationId\":\"corr-test-001\",\"payload\":\"video-123.mp4\"}",
-      "attributes": {},
-      "messageAttributes": {},
-      "md5OfBody": "",
+      "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"us-east-1\",\"eventTime\":\"2026-03-12T23:50:58.506Z\",\"eventName\":\"ObjectCreated:Put\",\"userIdentity\":{\"principalId\":\"AWS:AROAVRLYUV25CKEQYONLY:video-processing-engine-dev-video-management\"},\"requestParameters\":{\"sourceIPAddress\":\"187.57.174.218\"},\"responseElements\":{\"x-amz-request-id\":\"TAJJQ56RJSAQBGF7\",\"x-amz-id-2\":\"4Jvdb1nlTRROAOe0cyGd0LttCixS7g0LwTwMctMhgicBjHr7O6qRiZ0MfUbQovrvdBP0RYlkyrjOW1ynt68RqhBldQzTVgbW\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"tf-s3-queue-20260311225444102200000001\",\"bucket\":{\"name\":\"video-processing-engine-dev-videos\",\"ownerIdentity\":{\"principalId\":\"AWRHZHFVRL4CL\"},\"arn\":\"arn:aws:s3:::video-processing-engine-dev-videos\"},\"object\":{\"key\":\"videos/0468f438-20d1-7008-aea2-a0aeeb174a5b/85898cf6-706c-4876-8b80-3d3dcd2863b6/original\",\"size\":16394884,\"eTag\":\"b2d23b6998d6e28139a1e493fd35d42d\",\"sequencer\":\"0069B35160A08719D4\"}}}]}",
       "eventSource": "aws:sqs",
-      "eventSourceARN": "arn:aws:sqs:us-east-1:123456789012:video-orchestrator-queue",
       "awsRegion": "us-east-1"
     }
   ]
 }
 
 ================================================================================
-2) JSON DIRETO (sem envelope SQS)
-   Use para teste rápido; o root do JSON é o próprio evento.
-================================================================================
-
-{
-  "jobId": "550e8400-e29b-41d4-a716-446655440000",
-  "correlationId": "corr-test-002",
-  "payload": "video-456.mp4"
-}
-
-================================================================================
-Resposta esperada (mock): statusCode 200, echo de jobId/correlationId e message
-"Mock: job recebido e processado (stub)".
+Se você colar só o evento S3 (sem envelope SQS), record.Body fica null e ocorre erro.
+Sempre use o formato acima: Records[].body = string com o JSON do evento S3.
 ================================================================================

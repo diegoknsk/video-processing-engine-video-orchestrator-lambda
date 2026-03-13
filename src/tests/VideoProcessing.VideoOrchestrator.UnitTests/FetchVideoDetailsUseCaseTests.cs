@@ -19,7 +19,7 @@ public sealed class FetchVideoDetailsUseCaseTests
     {
         var sut = new FetchVideoDetailsUseCase(_tokenServiceMock.Object, _videoClientMock.Object, _loggerMock.Object);
         _tokenServiceMock.Setup(x => x.GetAccessTokenAsync(It.IsAny<CancellationToken>())).ReturnsAsync("token");
-        var expected = new VideoDetails("v1", "u1", "Title", "Status", "videos/u1/v1/original", "", "User", "user@x.com");
+        var expected = new VideoDetails("v1", "u1", "Title", "Status", "videos/u1/v1/original", "", "User", "user@x.com", 0, 0, 1);
         _videoClientMock
             .Setup(x => x.GetVideoDetailsAsync("u1", "v1", "token", It.IsAny<CancellationToken>()))
             .ReturnsAsync(expected);

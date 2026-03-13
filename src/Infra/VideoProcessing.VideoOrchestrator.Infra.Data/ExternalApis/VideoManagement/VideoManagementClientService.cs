@@ -20,16 +20,19 @@ public sealed class VideoManagementClientService(IVideoManagementApi api) : IVid
         try
         {
             var response = await api.GetVideoAsync(userId, videoId, authorization, ct);
-            var user = response.User;
+            var d = response.Data;
             return new VideoDetails(
-                VideoId: response.Id,
-                UserId: response.UserId,
-                Title: response.Title,
-                Status: response.Status,
-                S3Key: response.S3Key,
-                S3Bucket: "",
-                UserName: user?.Name ?? "",
-                UserEmail: user?.Email ?? ""
+                VideoId: d.VideoId,
+                UserId: d.UserId,
+                Title: d.OriginalFileName,
+                Status: d.StatusDescription,
+                S3Key: d.S3KeyVideo,
+                S3Bucket: d.S3BucketVideo,
+                UserName: "",
+                UserEmail: d.UserEmail,
+                DurationSec: d.DurationSec,
+                FrameIntervalSec: d.FrameIntervalSec,
+                ParallelChunks: d.ParallelChunks > 0 ? d.ParallelChunks : 1
             );
         }
         catch (ApiException ex)
