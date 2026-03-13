@@ -32,6 +32,7 @@ public sealed class VideoManagementClientServiceTests
                     UserId = "user-1",
                     UserEmail = "john@example.com",
                     OriginalFileName = "My Video",
+                    Status = 1,
                     StatusDescription = "Uploaded",
                     S3KeyVideo = "videos/user-1/video-2/original",
                     S3BucketVideo = "my-bucket"
@@ -119,6 +120,24 @@ public sealed class VideoManagementClientServiceTests
         result.ParallelChunks.Should().Be(1);
         result.DurationSec.Should().Be(30);
         result.FrameIntervalSec.Should().Be(5);
+    }
+
+    [Fact]
+    public async Task GetVideoDetailsAsync_WhenApiReturns5xx_ThrowsExternalServiceException()
+    {
+        var sut = new VideoManagementClientService(_apiMock.Object);
+        _apiMock
+            .Setup(x => x.GetVideoAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<CancellationToken>()))
+            .ThrowsAsync(await ApiException.Create(
+                new HttpRequestMessage(),
+                HttpMethod.Get,
+                new HttpResponseMessage(HttpStatusCode.InternalServerError),
+                null!));
+
+        var act = () => sut.GetVideoDetailsAsync("user-1", "video-2", "token");
+
+        await act.Should().ThrowAsync<ExternalServiceException>()
+            .WithMessage("*Video Management API error*InternalServerError*");
     }
 
     [Fact]

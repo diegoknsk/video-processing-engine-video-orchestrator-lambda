@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.9315000000000001" branch-rate="0.8636" version="1.9" timestamp="1773438930" lines-covered="381" lines-valid="409" branches-covered="38" branches-valid="44">
+  <sources>
+    <source>C:\Projetos\Fiap\video-processing-engine-video-orchestrator-lambda\src\</source>
+  </sources>
+  <packages>
+    <package name="VideoProcessing.VideoOrchestrator.Application" line-rate="1" branch-rate="1" complexity="25">
+      <classes>
+        <class name="VideoProcessing.VideoOrchestrator.Application.UseCases.FetchVideoDetailsUseCase" filename="Core\VideoProcessing.VideoOrchestrator.Application\UseCases\FetchVideoDetailsUseCase.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(VideoProcessing.VideoOrchestrator.Application.Ports.IM2MTokenService,VideoProcessing.VideoOrchestrator.Application.Ports.IVideoManagementClient,Microsoft.Extensions.Logging.ILogger`1&lt;VideoProcessing.VideoOrchestrator.Application.UseCases.FetchVideoDetailsUseCase&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="4" branch="False" />
+                <line number="12" hits="4" branch="False" />
+                <line number="13" hits="4" branch="False" />
+                <line number="14" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="4" branch="False" />
+            <line number="12" hits="4" branch="False" />
+            <line number="13" hits="4" branch="False" />
+            <line number="14" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Application.UseCases.FetchVideoDetailsUseCase/&lt;ExecuteAsync&gt;d__4" filename="Core\VideoProcessing.VideoOrchestrator.Application\UseCases\FetchVideoDetailsUseCase.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="2" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="2" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Application.UseCases.OrchestrateVideoProcessingUseCase" filename="Core\VideoProcessing.VideoOrchestrator.Application\UseCases\OrchestrateVideoProcessingUseCase.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(VideoProcessing.VideoOrchestrator.Application.Ports.IStepFunctionService,Microsoft.Extensions.Options.IOptions`1&lt;VideoProcessing.VideoOrchestrator.Application.Options.OutputOptions&gt;,Microsoft.Extensions.Logging.ILogger`1&lt;VideoProcessing.VideoOrchestrator.Application.UseCases.OrchestrateVideoProcessingUseCase&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="3" branch="False" />
+                <line number="14" hits="3" branch="False" />
+                <line number="15" hits="3" branch="False" />
+                <line number="16" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="15" hits="3" branch="False" />
+            <line number="16" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Application.UseCases.OrchestrateVideoProcessingUseCase/&lt;ExecuteAsync&gt;d__4" filename="Core\VideoProcessing.VideoOrchestrator.Application\UseCases\OrchestrateVideoProcessingUseCase.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="3" branch="False" />
+                <line number="27" hits="3" branch="False" />
+                <line number="28" hits="3" branch="False" />
+                <line number="29" hits="3" branch="False" />
+                <line number="31" hits="3" branch="False" />
+                <line number="33" hits="2" branch="False" />
+                <line number="34" hits="2" branch="False" />
+                <line number="35" hits="2" branch="False" />
+                <line number="37" hits="2" branch="False" />
+                <line number="38" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="3" branch="False" />
+            <line number="27" hits="3" branch="False" />
+            <line number="28" hits="3" branch="False" />
+            <line number="29" hits="3" branch="False" />
+            <line number="31" hits="3" branch="False" />
+            <line number="33" hits="2" branch="False" />
+            <line number="34" hits="2" branch="False" />
+            <line number="35" hits="2" branch="False" />
+            <line number="37" hits="2" branch="False" />
+            <line number="38" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Application.Parsers.S3KeyParser" filename="Core\VideoProcessing.VideoOrchestrator.Application\Parsers\S3KeyParser.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="Parse" signature="(System.String)" line-rate="1" branch-rate="1" complexity="8">
+              <lines>
+                <line number="20" hits="12" branch="False" />
+                <line number="21" hits="12" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="22" hits="3" branch="False" />
+                <line number="24" hits="9" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="46" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="25" hits="2" branch="False" />
+                <line number="27" hits="7" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="78" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="1" branch="False" />
+                <line number="30" hits="6" branch="False" />
+                <line number="31" hits="6" branch="False" />
+                <line number="32" hits="6" branch="False" />
+                <line number="34" hits="6" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="183" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="1" branch="False" />
+                <line number="37" hits="5" branch="False" />
+                <line number="38" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="12" branch="False" />
+            <line number="21" hits="12" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="9" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="22" hits="3" branch="False" />
+            <line number="24" hits="9" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="46" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="25" hits="2" branch="False" />
+            <line number="27" hits="7" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="78" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="28" hits="1" branch="False" />
+            <line number="30" hits="6" branch="False" />
+            <line number="31" hits="6" branch="False" />
+            <line number="32" hits="6" branch="False" />
+            <line number="34" hits="6" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="183" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="35" hits="1" branch="False" />
+            <line number="37" hits="5" branch="False" />
+            <line number="38" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Application.Options.OutputOptions" filename="Core\VideoProcessing.VideoOrchestrator.Application\Options\OutputOptions.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_FramesBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="74" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ManifestBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="52" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ZipBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="74" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FrameIntervalSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="51" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrdenaAutomaticamente" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="51" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="74" branch="False" />
+            <line number="16" hits="52" branch="False" />
+            <line number="19" hits="74" branch="False" />
+            <line number="22" hits="51" branch="False" />
+            <line number="25" hits="51" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Application.Builders.StepFunctionPayloadBuilder" filename="Core\VideoProcessing.VideoOrchestrator.Application\Builders\StepFunctionPayloadBuilder.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="Build" signature="(VideoProcessing.VideoOrchestrator.Domain.Models.VideoDetails,System.String,VideoProcessing.VideoOrchestrator.Application.Options.OutputOptions)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="19" hits="22" branch="False" />
+                <line number="20" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="8" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="21" hits="22" branch="False" />
+                <line number="23" hits="22" branch="False" />
+                <line number="24" hits="22" branch="False" />
+                <line number="26" hits="22" branch="False" />
+                <line number="27" hits="22" branch="False" />
+                <line number="28" hits="22" branch="False" />
+                <line number="29" hits="22" branch="False" />
+                <line number="30" hits="22" branch="False" />
+                <line number="31" hits="22" branch="False" />
+                <line number="32" hits="22" branch="False" />
+                <line number="33" hits="22" branch="False" />
+                <line number="34" hits="22" branch="False" />
+                <line number="35" hits="22" branch="False" />
+                <line number="36" hits="22" branch="False" />
+                <line number="37" hits="22" branch="False" />
+                <line number="38" hits="22" branch="False" />
+                <line number="39" hits="22" branch="False" />
+                <line number="40" hits="22" branch="False" />
+                <line number="41" hits="22" branch="False" />
+                <line number="42" hits="22" branch="False" />
+                <line number="43" hits="22" branch="False" />
+                <line number="44" hits="22" branch="False" />
+                <line number="45" hits="22" branch="False" />
+                <line number="46" hits="22" branch="False" />
+                <line number="47" hits="22" branch="False" />
+                <line number="48" hits="22" branch="False" />
+                <line number="49" hits="22" branch="False" />
+                <line number="50" hits="22" branch="False" />
+                <line number="51" hits="22" branch="False" />
+                <line number="52" hits="22" branch="False" />
+                <line number="53" hits="22" branch="False" />
+                <line number="54" hits="22" branch="False" />
+                <line number="55" hits="22" branch="False" />
+                <line number="56" hits="22" branch="False" />
+                <line number="57" hits="22" branch="False" />
+                <line number="58" hits="22" branch="False" />
+                <line number="59" hits="22" branch="False" />
+              </lines>
+            </method>
+            <method name="BuildChunks" signature="(VideoProcessing.VideoOrchestrator.Domain.Models.VideoDetails,System.Int32)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="62" hits="22" branch="False" />
+                <line number="63" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="8" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="64" hits="22" branch="False" />
+                <line number="66" hits="22" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="38" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="80" hits="21" branch="False" />
+                <line number="81" hits="21" branch="False" />
+                <line number="83" hits="98" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="629" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="84" hits="28" branch="False" />
+                <line number="85" hits="28" branch="False" />
+                <line number="86" hits="28" branch="False" />
+                <line number="87" hits="28" branch="False" />
+                <line number="88" hits="28" branch="False" />
+                <line number="89" hits="28" branch="False" />
+                <line number="90" hits="28" branch="False" />
+                <line number="91" hits="28" branch="False" />
+                <line number="92" hits="28" branch="False" />
+                <line number="93" hits="28" branch="False" />
+                <line number="94" hits="28" branch="False" />
+                <line number="95" hits="28" branch="False" />
+                <line number="96" hits="28" branch="False" />
+                <line number="98" hits="21" branch="False" />
+                <line number="99" hits="22" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="22" branch="False" />
+            <line number="20" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="8" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="21" hits="22" branch="False" />
+            <line number="23" hits="22" branch="False" />
+            <line number="24" hits="22" branch="False" />
+            <line number="26" hits="22" branch="False" />
+            <line number="27" hits="22" branch="False" />
+            <line number="28" hits="22" branch="False" />
+            <line number="29" hits="22" branch="False" />
+            <line number="30" hits="22" branch="False" />
+            <line number="31" hits="22" branch="False" />
+            <line number="32" hits="22" branch="False" />
+            <line number="33" hits="22" branch="False" />
+            <line number="34" hits="22" branch="False" />
+            <line number="35" hits="22" branch="False" />
+            <line number="36" hits="22" branch="False" />
+            <line number="37" hits="22" branch="False" />
+            <line number="38" hits="22" branch="False" />
+            <line number="39" hits="22" branch="False" />
+            <line number="40" hits="22" branch="False" />
+            <line number="41" hits="22" branch="False" />
+            <line number="42" hits="22" branch="False" />
+            <line number="43" hits="22" branch="False" />
+            <line number="44" hits="22" branch="False" />
+            <line number="45" hits="22" branch="False" />
+            <line number="46" hits="22" branch="False" />
+            <line number="47" hits="22" branch="False" />
+            <line number="48" hits="22" branch="False" />
+            <line number="49" hits="22" branch="False" />
+            <line number="50" hits="22" branch="False" />
+            <line number="51" hits="22" branch="False" />
+            <line number="52" hits="22" branch="False" />
+            <line number="53" hits="22" branch="False" />
+            <line number="54" hits="22" branch="False" />
+            <line number="55" hits="22" branch="False" />
+            <line number="56" hits="22" branch="False" />
+            <line number="57" hits="22" branch="False" />
+            <line number="58" hits="22" branch="False" />
+            <line number="59" hits="22" branch="False" />
+            <line number="62" hits="22" branch="False" />
+            <line number="63" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="8" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="64" hits="22" branch="False" />
+            <line number="66" hits="22" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="38" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="80" hits="21" branch="False" />
+            <line number="81" hits="21" branch="False" />
+            <line number="83" hits="98" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="629" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="84" hits="28" branch="False" />
+            <line number="85" hits="28" branch="False" />
+            <line number="86" hits="28" branch="False" />
+            <line number="87" hits="28" branch="False" />
+            <line number="88" hits="28" branch="False" />
+            <line number="89" hits="28" branch="False" />
+            <line number="90" hits="28" branch="False" />
+            <line number="91" hits="28" branch="False" />
+            <line number="92" hits="28" branch="False" />
+            <line number="93" hits="28" branch="False" />
+            <line number="94" hits="28" branch="False" />
+            <line number="95" hits="28" branch="False" />
+            <line number="96" hits="28" branch="False" />
+            <line number="98" hits="21" branch="False" />
+            <line number="99" hits="22" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="VideoProcessing.VideoOrchestrator.Domain" line-rate="1" branch-rate="1" complexity="67">
+      <classes>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.StepFunctionPayload" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_ContractVersion" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ExecutionId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="17" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Video" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="46" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Output" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Zip" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Finalize" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,VideoProcessing.VideoOrchestrator.Domain.Models.VideoProcessingInput,VideoProcessing.VideoOrchestrator.Domain.Models.OutputInfo,VideoProcessing.VideoOrchestrator.Domain.Models.ZipOutputInfo,VideoProcessing.VideoOrchestrator.Domain.Models.FinalizeInfo,VideoProcessing.VideoOrchestrator.Domain.Models.UserInfo)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="26" branch="False" />
+                <line number="15" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="8" branch="False" />
+            <line number="9" hits="17" branch="False" />
+            <line number="10" hits="46" branch="False" />
+            <line number="11" hits="13" branch="False" />
+            <line number="12" hits="12" branch="False" />
+            <line number="13" hits="18" branch="False" />
+            <line number="14" hits="9" branch="False" />
+            <line number="7" hits="26" branch="False" />
+            <line number="15" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.VideoProcessingInput" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_VideoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3Bucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3Key" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OutputPrefix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Chunks" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="36" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.List`1&lt;VideoProcessing.VideoOrchestrator.Domain.Models.VideoChunk&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="26" branch="False" />
+                <line number="28" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="12" branch="False" />
+            <line number="22" hits="7" branch="False" />
+            <line number="23" hits="5" branch="False" />
+            <line number="24" hits="5" branch="False" />
+            <line number="25" hits="5" branch="False" />
+            <line number="26" hits="6" branch="False" />
+            <line number="27" hits="36" branch="False" />
+            <line number="20" hits="26" branch="False" />
+            <line number="28" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.VideoChunk" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_ChunkIndex" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ChunkId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StartSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="15" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EndSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_IntervalSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ManifestPrefix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FramesPrefix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="33" branch="False" />
+                <line number="42" hits="33" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="35" hits="6" branch="False" />
+            <line number="36" hits="6" branch="False" />
+            <line number="37" hits="15" branch="False" />
+            <line number="38" hits="16" branch="False" />
+            <line number="39" hits="8" branch="False" />
+            <line number="40" hits="6" branch="False" />
+            <line number="41" hits="6" branch="False" />
+            <line number="34" hits="33" branch="False" />
+            <line number="42" hits="33" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.OutputInfo" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_FramesBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="48" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ManifestBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="49" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="47" hits="26" branch="False" />
+                <line number="50" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="48" hits="9" branch="False" />
+            <line number="49" hits="9" branch="False" />
+            <line number="47" hits="26" branch="False" />
+            <line number="50" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.ZipOutputInfo" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_OutputBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="56" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OutputKey" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="57" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="55" hits="26" branch="False" />
+                <line number="58" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="56" hits="9" branch="False" />
+            <line number="57" hits="8" branch="False" />
+            <line number="55" hits="26" branch="False" />
+            <line number="58" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.FinalizeInfo" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_FramesBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="64" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FramesBasePrefix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="65" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OutputBucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="66" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_VideoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OutputBasePrefix" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="68" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrdenaAutomaticamente" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="69" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String,System.Boolean)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="63" hits="26" branch="False" />
+                <line number="70" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="64" hits="9" branch="False" />
+            <line number="65" hits="6" branch="False" />
+            <line number="66" hits="9" branch="False" />
+            <line number="67" hits="6" branch="False" />
+            <line number="68" hits="6" branch="False" />
+            <line number="69" hits="7" branch="False" />
+            <line number="63" hits="26" branch="False" />
+            <line number="70" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.UserInfo" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\StepFunctionPayload.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="76" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="77" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="75" hits="26" branch="False" />
+                <line number="78" hits="26" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="76" hits="7" branch="False" />
+            <line number="77" hits="7" branch="False" />
+            <line number="75" hits="26" branch="False" />
+            <line number="78" hits="26" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Models.VideoDetails" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Models\VideoDetails.cs" line-rate="1" branch-rate="1" complexity="12">
+          <methods>
+            <method name="get_VideoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="234" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="173" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3Key" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3Bucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="27" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserEmail" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="24" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DurationSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="26" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FrameIntervalSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="27" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ParallelChunks" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="47" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="29" branch="False" />
+                <line number="18" hits="29" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="234" branch="False" />
+            <line number="8" hits="173" branch="False" />
+            <line number="9" hits="24" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="11" hits="24" branch="False" />
+            <line number="12" hits="27" branch="False" />
+            <line number="13" hits="24" branch="False" />
+            <line number="14" hits="24" branch="False" />
+            <line number="15" hits="26" branch="False" />
+            <line number="16" hits="27" branch="False" />
+            <line number="17" hits="47" branch="False" />
+            <line number="6" hits="29" branch="False" />
+            <line number="18" hits="29" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Exceptions.ExternalServiceException" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Exceptions\ExternalServiceException.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.Exception)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="3" branch="False" />
+            <line number="11" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Exceptions.NotFoundException" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Exceptions\NotFoundException.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.Exception)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="3" branch="False" />
+            <line number="11" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Events.S3ObjectCreatedEvent" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Events\S3ObjectCreatedEvent.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Records" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Collections.Generic.IReadOnlyList`1&lt;VideoProcessing.VideoOrchestrator.Domain.Events.S3Record&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="7" branch="False" />
+                <line number="11" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="10" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="11" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Events.S3Record" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Events\S3ObjectCreatedEvent.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_S3" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(VideoProcessing.VideoOrchestrator.Domain.Events.S3Detail)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="5" branch="False" />
+                <line number="18" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="9" branch="False" />
+            <line number="16" hits="5" branch="False" />
+            <line number="18" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Events.S3Detail" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Events\S3ObjectCreatedEvent.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Bucket" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Object" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(VideoProcessing.VideoOrchestrator.Domain.Events.S3Bucket,VideoProcessing.VideoOrchestrator.Domain.Events.S3Object)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="5" branch="False" />
+                <line number="26" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="5" branch="False" />
+            <line number="25" hits="5" branch="False" />
+            <line number="23" hits="5" branch="False" />
+            <line number="26" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Events.S3Bucket" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Events\S3ObjectCreatedEvent.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="5" branch="False" />
+                <line number="33" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="32" hits="5" branch="False" />
+            <line number="31" hits="5" branch="False" />
+            <line number="33" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Domain.Events.S3Object" filename="Core\VideoProcessing.VideoOrchestrator.Domain\Events\S3ObjectCreatedEvent.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Key" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="5" branch="False" />
+                <line number="40" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="39" hits="5" branch="False" />
+            <line number="38" hits="5" branch="False" />
+            <line number="40" hits="5" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="VideoProcessing.VideoOrchestrator.Infra.CrossCutting" line-rate="1" branch-rate="1" complexity="7">
+      <classes>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.CrossCutting.DependencyInjection" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.CrossCutting\DependencyInjection.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddOrchestratorConfiguration" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="3" branch="False" />
+                <line number="20" hits="3" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="3" branch="False" />
+                <line number="26" hits="3" branch="False" />
+                <line number="28" hits="3" branch="False" />
+                <line number="29" hits="3" branch="False" />
+                <line number="30" hits="3" branch="False" />
+                <line number="31" hits="3" branch="False" />
+                <line number="33" hits="3" branch="False" />
+                <line number="34" hits="3" branch="False" />
+                <line number="35" hits="3" branch="False" />
+                <line number="36" hits="3" branch="False" />
+                <line number="38" hits="3" branch="False" />
+                <line number="40" hits="3" branch="False" />
+                <line number="41" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="3" branch="False" />
+            <line number="26" hits="3" branch="False" />
+            <line number="28" hits="3" branch="False" />
+            <line number="29" hits="3" branch="False" />
+            <line number="30" hits="3" branch="False" />
+            <line number="31" hits="3" branch="False" />
+            <line number="33" hits="3" branch="False" />
+            <line number="34" hits="3" branch="False" />
+            <line number="35" hits="3" branch="False" />
+            <line number="36" hits="3" branch="False" />
+            <line number="38" hits="3" branch="False" />
+            <line number="40" hits="3" branch="False" />
+            <line number="41" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings.M2MAuthOptions" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.CrossCutting\Settings\M2MAuthOptions.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_TokenEndpoint" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ClientId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="15" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ClientSecret" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="14" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="12" branch="False" />
+            <line number="21" hits="15" branch="False" />
+            <line number="25" hits="14" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings.StepFunctionOptions" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.CrossCutting\Settings\StepFunctionOptions.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_StateMachineArn" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="18" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="18" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings.VideoManagementApiOptions" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.CrossCutting\Settings\VideoManagementApiOptions.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_BaseUrl" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TimeoutSeconds" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="14" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="10" branch="False" />
+            <line number="20" hits="14" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="VideoProcessing.VideoOrchestrator.Infra.Data" line-rate="0.9243000000000001" branch-rate="1" complexity="38">
+      <classes>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.DependencyInjection" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\DependencyInjection.cs" line-rate="0.5909" branch-rate="1" complexity="1">
+          <methods>
+            <method name="AddOrchestratorData" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="0.5909" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.VideoManagementApiResponse" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\VideoManagement\VideoManagementApiResponse.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Success" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Data" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Timestamp" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="3" branch="False" />
+            <line number="14" hits="12" branch="False" />
+            <line number="17" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.VideoManagementVideoData" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\VideoManagement\VideoManagementApiResponse.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name="get_VideoId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserEmail" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OriginalFileName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_StatusDescription" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3BucketVideo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="44" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3KeyVideo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="47" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DurationSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="50" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_FrameIntervalSec" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="53" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ParallelChunks" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="56" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="12" branch="False" />
+            <line number="29" hits="12" branch="False" />
+            <line number="32" hits="11" branch="False" />
+            <line number="35" hits="11" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="41" hits="11" branch="False" />
+            <line number="44" hits="12" branch="False" />
+            <line number="47" hits="12" branch="False" />
+            <line number="50" hits="6" branch="False" />
+            <line number="53" hits="6" branch="False" />
+            <line number="56" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.VideoManagementClientService" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\VideoManagement\VideoManagementClientService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.IVideoManagementApi)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.VideoManagementClientService/&lt;GetVideoDetailsAsync&gt;d__2" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\VideoManagement\VideoManagementClientService.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="17" hits="6" branch="False" />
+                <line number="18" hits="6" branch="False" />
+                <line number="21" hits="6" branch="False" />
+                <line number="22" hits="6" branch="False" />
+                <line number="23" hits="4" branch="False" />
+                <line number="24" hits="4" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="333" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="25" hits="4" branch="False" />
+                <line number="26" hits="4" branch="False" />
+                <line number="27" hits="4" branch="False" />
+                <line number="28" hits="4" branch="False" />
+                <line number="29" hits="4" branch="False" />
+                <line number="30" hits="4" branch="False" />
+                <line number="31" hits="4" branch="False" />
+                <line number="32" hits="4" branch="False" />
+                <line number="33" hits="4" branch="False" />
+                <line number="34" hits="4" branch="False" />
+                <line number="35" hits="4" branch="False" />
+                <line number="36" hits="4" branch="False" />
+                <line number="38" hits="2" branch="False" />
+                <line number="39" hits="2" branch="False" />
+                <line number="40" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="393" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="45" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="6" branch="False" />
+            <line number="18" hits="6" branch="False" />
+            <line number="21" hits="6" branch="False" />
+            <line number="22" hits="6" branch="False" />
+            <line number="23" hits="4" branch="False" />
+            <line number="24" hits="4" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="333" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="25" hits="4" branch="False" />
+            <line number="26" hits="4" branch="False" />
+            <line number="27" hits="4" branch="False" />
+            <line number="28" hits="4" branch="False" />
+            <line number="29" hits="4" branch="False" />
+            <line number="30" hits="4" branch="False" />
+            <line number="31" hits="4" branch="False" />
+            <line number="32" hits="4" branch="False" />
+            <line number="33" hits="4" branch="False" />
+            <line number="34" hits="4" branch="False" />
+            <line number="35" hits="4" branch="False" />
+            <line number="36" hits="4" branch="False" />
+            <line number="38" hits="2" branch="False" />
+            <line number="39" hits="2" branch="False" />
+            <line number="40" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="393" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="45" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.VideoManagementUserInfo" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\VideoManagement\VideoManagementUserInfo.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="5" branch="False" />
+            <line number="14" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.VideoManagement.VideoManagementVideoResponse" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\VideoManagement\VideoManagementVideoResponse.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_S3Key" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="3" branch="False" />
+            <line number="14" hits="3" branch="False" />
+            <line number="17" hits="3" branch="False" />
+            <line number="20" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+            <line number="26" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.M2MAuth.M2MTokenRequest" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\M2MAuth\M2MTokenRequest.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_GrantType" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ClientId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ClientSecret" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="6" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="3" branch="False" />
+            <line number="14" hits="6" branch="False" />
+            <line number="17" hits="6" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.M2MAuth.M2MTokenResponse" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\M2MAuth\M2MTokenResponse.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_AccessToken" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ExpiresIn" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="6" branch="False" />
+            <line number="14" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.M2MAuth.M2MTokenService" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\M2MAuth\M2MTokenService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.M2MAuth.IM2MAuthApi,Microsoft.Extensions.Options.IOptions`1&lt;VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings.M2MAuthOptions&gt;,Microsoft.Extensions.Logging.ILogger`1&lt;VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.M2MAuth.M2MTokenService&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.ExternalApis.M2MAuth.M2MTokenService/&lt;GetAccessTokenAsync&gt;d__4" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\ExternalApis\M2MAuth\M2MTokenService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="3" branch="False" />
+                <line number="18" hits="3" branch="False" />
+                <line number="19" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="25" hits="2" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="31" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="3" branch="False" />
+            <line number="18" hits="3" branch="False" />
+            <line number="19" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="25" hits="2" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="31" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.AwsServices.StepFunctionService" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\AwsServices\StepFunctionService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(Amazon.StepFunctions.IAmazonStepFunctions,Microsoft.Extensions.Options.IOptions`1&lt;VideoProcessing.VideoOrchestrator.Infra.CrossCutting.Settings.StepFunctionOptions&gt;,Microsoft.Extensions.Logging.ILogger`1&lt;VideoProcessing.VideoOrchestrator.Infra.Data.AwsServices.StepFunctionService&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="4" branch="False" />
+                <line number="16" hits="4" branch="False" />
+                <line number="17" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+            <line number="17" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Infra.Data.AwsServices.StepFunctionService/&lt;StartExecutionAsync&gt;d__5" filename="Infra\VideoProcessing.VideoOrchestrator.Infra.Data\AwsServices\StepFunctionService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="4" branch="False" />
+                <line number="27" hits="4" branch="False" />
+                <line number="28" hits="4" branch="False" />
+                <line number="30" hits="4" branch="False" />
+                <line number="31" hits="4" branch="False" />
+                <line number="32" hits="4" branch="False" />
+                <line number="34" hits="4" branch="False" />
+                <line number="35" hits="4" branch="False" />
+                <line number="36" hits="4" branch="False" />
+                <line number="37" hits="4" branch="False" />
+                <line number="38" hits="4" branch="False" />
+                <line number="39" hits="4" branch="False" />
+                <line number="42" hits="4" branch="False" />
+                <line number="43" hits="4" branch="False" />
+                <line number="44" hits="3" branch="False" />
+                <line number="45" hits="3" branch="False" />
+                <line number="46" hits="3" branch="False" />
+                <line number="47" hits="3" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="56" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="4" branch="False" />
+            <line number="27" hits="4" branch="False" />
+            <line number="28" hits="4" branch="False" />
+            <line number="30" hits="4" branch="False" />
+            <line number="31" hits="4" branch="False" />
+            <line number="32" hits="4" branch="False" />
+            <line number="34" hits="4" branch="False" />
+            <line number="35" hits="4" branch="False" />
+            <line number="36" hits="4" branch="False" />
+            <line number="37" hits="4" branch="False" />
+            <line number="38" hits="4" branch="False" />
+            <line number="39" hits="4" branch="False" />
+            <line number="42" hits="4" branch="False" />
+            <line number="43" hits="4" branch="False" />
+            <line number="44" hits="3" branch="False" />
+            <line number="45" hits="3" branch="False" />
+            <line number="46" hits="3" branch="False" />
+            <line number="47" hits="3" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="56" hits="3" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="VideoProcessing.VideoOrchestrator.Lambda" line-rate="0.6984" branch-rate="0.75" complexity="26">
+      <classes>
+        <class name="VideoProcessing.VideoOrchestrator.Lambda.Function" filename="InterfacesExternas\VideoProcessing.VideoOrchestrator.Lambda\Function.cs" line-rate="0.1739" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(System.IServiceProvider)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="6" branch="False" />
+                <line number="27" hits="6" branch="False" />
+                <line number="28" hits="6" branch="False" />
+                <line number="29" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="6" branch="False" />
+            <line number="27" hits="6" branch="False" />
+            <line number="28" hits="6" branch="False" />
+            <line number="29" hits="6" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="VideoProcessing.VideoOrchestrator.Lambda.Function/&lt;FunctionHandler&gt;d__3" filename="InterfacesExternas\VideoProcessing.VideoOrchestrator.Lambda\Function.cs" line-rate="1" branch-rate="0.75" complexity="24">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="0.75" complexity="24">
+              <lines>
+                <line number="57" hits="6" branch="False" />
+                <line number="58" hits="29" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1261" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="59" hits="7" branch="False" />
+                <line number="60" hits="7" branch="False" />
+                <line number="62" hits="7" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="134" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="63" hits="2" branch="False" />
+                <line number="64" hits="2" branch="False" />
+                <line number="65" hits="2" branch="False" />
+                <line number="70" hits="5" branch="False" />
+                <line number="71" hits="5" branch="False" />
+                <line number="72" hits="4" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="79" hits="4" branch="True" condition-coverage="83.33% (5/6)">
+                  <conditions>
+                    <condition number="284" type="jump" coverage="50%" />
+                    <condition number="299" type="jump" coverage="100%" />
+                    <condition number="319" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="80" hits="2" branch="False" />
+                <line number="81" hits="2" branch="False" />
+                <line number="82" hits="2" branch="False" />
+                <line number="85" hits="2" branch="False" />
+                <line number="86" hits="2" branch="False" />
+                <line number="87" hits="2" branch="False" />
+                <line number="89" hits="10" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="1148" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="90" hits="2" branch="False" />
+                <line number="91" hits="2" branch="True" condition-coverage="50% (3/6)">
+                  <conditions>
+                    <condition number="525" type="jump" coverage="50%" />
+                    <condition number="537" type="jump" coverage="50%" />
+                    <condition number="549" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="92" hits="2" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="575" type="jump" coverage="50%" />
+                    <condition number="587" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="93" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="618" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="94" hits="1" branch="False" />
+                <line number="95" hits="1" branch="False" />
+                <line number="96" hits="1" branch="False" />
+                <line number="99" hits="1" branch="False" />
+                <line number="101" hits="1" branch="False" />
+                <line number="102" hits="1" branch="False" />
+                <line number="103" hits="1" branch="False" />
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
+                <line number="107" hits="1" branch="False" />
+                <line number="108" hits="1" branch="False" />
+                <line number="109" hits="2" branch="False" />
+                <line number="110" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="57" hits="6" branch="False" />
+            <line number="58" hits="29" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1261" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="59" hits="7" branch="False" />
+            <line number="60" hits="7" branch="False" />
+            <line number="62" hits="7" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="134" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="63" hits="2" branch="False" />
+            <line number="64" hits="2" branch="False" />
+            <line number="65" hits="2" branch="False" />
+            <line number="70" hits="5" branch="False" />
+            <line number="71" hits="5" branch="False" />
+            <line number="72" hits="4" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="79" hits="4" branch="True" condition-coverage="83.33% (5/6)">
+              <conditions>
+                <condition number="284" type="jump" coverage="50%" />
+                <condition number="299" type="jump" coverage="100%" />
+                <condition number="319" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="80" hits="2" branch="False" />
+            <line number="81" hits="2" branch="False" />
+            <line number="82" hits="2" branch="False" />
+            <line number="85" hits="2" branch="False" />
+            <line number="86" hits="2" branch="False" />
+            <line number="87" hits="2" branch="False" />
+            <line number="89" hits="10" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="1148" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="90" hits="2" branch="False" />
+            <line number="91" hits="2" branch="True" condition-coverage="50% (3/6)">
+              <conditions>
+                <condition number="525" type="jump" coverage="50%" />
+                <condition number="537" type="jump" coverage="50%" />
+                <condition number="549" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="92" hits="2" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="575" type="jump" coverage="50%" />
+                <condition number="587" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="93" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="618" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="94" hits="1" branch="False" />
+            <line number="95" hits="1" branch="False" />
+            <line number="96" hits="1" branch="False" />
+            <line number="99" hits="1" branch="False" />
+            <line number="101" hits="1" branch="False" />
+            <line number="102" hits="1" branch="False" />
+            <line number="103" hits="1" branch="False" />
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
+            <line number="107" hits="1" branch="False" />
+            <line number="108" hits="1" branch="False" />
+            <line number="109" hits="2" branch="False" />
+            <line number="110" hits="3" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

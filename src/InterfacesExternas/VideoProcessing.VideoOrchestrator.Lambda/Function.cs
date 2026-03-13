@@ -20,6 +20,14 @@ namespace VideoProcessing.VideoOrchestrator.Lambda
     {
         private readonly IServiceProvider _serviceProvider;
 
+        /// <summary>
+        /// Construtor para testes: permite injetar o service provider mockado.
+        /// </summary>
+        internal Function(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+        }
+
         public Function()
         {
             var config = new ConfigurationBuilder()
